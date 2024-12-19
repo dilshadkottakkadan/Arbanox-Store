@@ -1,0 +1,39 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1692456698.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"product",
+		"compareProducts"
+	],
+	"properties": {
+		"product": {
+			"$id": "#root/product", 
+			"title": "Product", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				""
+			],
+			"pattern": "^.*$"
+		},
+		"compareProducts": {
+			"$id": "#root/compareProducts", 
+			"title": "Compareproducts", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/compareProducts/items", 
+				"title": "Items", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					""
+				],
+				"pattern": "^.*$"
+			}
+		}
+	}
+}
